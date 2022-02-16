@@ -42,23 +42,35 @@ for (let i = 0; i < items.length; i++)
     lilImg.append(img);
 }
 
-let currentIndex = 0;
+let activeElement = 2;
 const images = document.getElementsByClassName("img-lg");
-images[currentIndex].classList.add("active");
+const miniImg = document.getElementsByClassName("lil-img");
+images[activeElement].classList.add("active");
+miniImg[activeElement].classList.add("active-xs");
 
 const up = document.getElementById("up");
 const down = document.getElementById("down");
 
 up.addEventListener("click", function()
 {
-    images[currentIndex].classList.remove("active");
-    currentIndex--;
-    images[currentIndex].classList.add("active");
+    images[activeElement].classList.remove("active");
+    miniImg[activeElement].classList.remove("active-xs");
+    if (activeElement === 0)
+        activeElement = ( images.length -1 );
+    else
+        activeElement--;
+    images[activeElement].classList.add("active");
+    miniImg[activeElement].classList.add("active-xs");
 });
 
 down.addEventListener("click", function()
 {
-    images[currentIndex].classList.remove("active");
-    currentIndex++;
-    images[currentIndex].classList.add("active");
+    images[activeElement].classList.remove("active");
+    miniImg[activeElement].classList.remove("active-xs");
+    if (activeElement === images.length -1)
+        activeElement = 0;
+    else
+        activeElement++;
+    images[activeElement].classList.add("active");
+    miniImg[activeElement].classList.add("active-xs");
 });
