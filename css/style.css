@@ -6,4 +6,83 @@
     font-size: 15px;
 }
 
-img { width: 100%; }
+img { 
+    max-width: 100%;
+}
+
+#carousel-wrapper {
+    height: 300px;
+    width: 835px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#img-wrapper {
+    width: 700px;
+    height: 300px;
+}
+
+.img-lg {
+    width: 700px;
+    height: 300px;
+}
+
+.imgLg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#slider {
+    width: calc(100% - 700px);
+    height: 100%;
+    position: relative;
+}
+
+.lil-img {
+    height: 60px;
+}
+
+#arrows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+}
+
+#up, #down {
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+}
+
+
+/* bordi */
+
+/* #miniatures {
+    border: 2px dashed red;
+} */
+
+.lil-img {
+    border: 1px solid orange;
+}
+
+#big-img {
+    border: 2px dashed blue;
+}
+
+/* #carousel-wrapper {
+    border: 3px dashed green;
+} */

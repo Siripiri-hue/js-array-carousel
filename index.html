@@ -4,36 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>JSCarousel</title>
 </head>
 <body>
 
     <section>
-        <div id="carousel">
-            <div id="big-img">
-                <figure class="big-img-item active">
-                    <!-- qui va l'immagine ingrandita -->
-                    <figcaption class="b">
+        <div id="carousel-wrapper">
+            <div id="img-wrapper">
+                <div class="img-lg">
+                    <img src="img/01.jpg">
+                    <!-- <figcaption class="bigImg-caption"> -->
                         <!-- qui va la didascalia -->
-                    </figcaption>
-                </figure>
+                    <!-- </figcaption> -->
+                </div>
 
-                <figure class="big-img-item">
-                    <!-- qui va l'immagine ingrandita -->
-                    <figcaption class="b">
-                        <!-- qui va la didascalia -->
+<!--               <figure class="big-img-item">
+                     qui va l'immagine ingrandita 
+                    <figcaption class="bigImg-caption">
+                         qui va la didascalia 
                     </figcaption>
-                </figure>
+                </figure> -->
             </div>
             
             <div id="slider">
-                <ul id="minatures">
-                    <!-- qui va la lista di immaginine -->
-                </ul>
+                <div id="miniatures">
+
+                    <div class="lil-img">
+                        <!-- <img src="img/01.jpg"> -->
+                    </div>
+
+                    <div class="lil-img">
+                        <!-- <img src="img/02.jpg"> -->
+                    </div>
+
+                    <div class="lil-img">
+                        <!-- <img src="img/03.jpg"> -->
+                    </div>
+
+                    <div class="lil-img">
+                        <!-- <img src="img/04.jpg"> -->
+                    </div>
+
+                    <div class="lil-img">
+                        <!-- <img src="img/05.jpg"> -->
+                    </div>
+
+                </div>
 
                 <div id="arrows">
-                    <!-- qui vanno le freccette -->
+                    <div id="up">
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </div>
+                    <div id="down">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
                 </div>
             </div>
         </div>
