@@ -40,6 +40,18 @@ for (let i = 0; i < items.length; i++)
     big.src = img.src = items[i];
     bigImg.append(big);
     lilImg.append(img);
+
+    const info = document.createElement("div");
+    const country = document.createElement ("h1");
+    const caption = document.createElement("span");
+    bigImg.appendChild(info);
+    info.appendChild(country);
+    info.appendChild(caption);
+    info.classList.add("info");
+    country.classList.add("title");
+    caption.classList.add("caption");
+    country.innerText = title[i];
+    caption.innerText = text[i];
 }
 
 let activeElement = 2;

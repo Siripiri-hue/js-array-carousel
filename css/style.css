@@ -40,6 +40,26 @@ img {
     height: 300px;
     display: none;
     border-left: 1px solid black;
+    position: relative;
+}
+
+
+.info {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: white;
+    text-align: right;
+    width: 50%;
+}
+
+.title {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.caption {
+    font-size: 15px;
 }
 
 .img-lg img {
@@ -94,8 +114,10 @@ img {
 
 #up, #down {
     display: block;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
-    background-color: rgb(204, 204, 204);
+    background-color: rgba(204, 204, 204, 0.6);
     cursor: pointer;
 }
 
