@@ -32,7 +32,7 @@ img {
     height: 300px;
 }
 
-.imgLg img {
+.img-lg img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -47,6 +47,13 @@ img {
 
 .lil-img {
     height: 60px;
+}
+
+.lil-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 #arrows {
@@ -75,13 +82,13 @@ img {
     border: 2px dashed red;
 } */
 
-.lil-img {
+/* .lil-img {
     border: 1px solid orange;
-}
+} */
 
-#big-img {
+/* #big-img {
     border: 2px dashed blue;
-}
+} */
 
 /* #carousel-wrapper {
     border: 3px dashed green;
